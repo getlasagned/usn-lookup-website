@@ -1,0 +1,179 @@
+/* 🔹 GENERAL STYLING */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;  /* Black background */
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🔹 HEADER */
+h1 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    text-shadow: 3px 3px 10px rgba(255, 165, 0, 0.6);
+}
+
+/* 🔹 SEARCH CONTAINER */
+.search-container {
+    margin-top: 30px;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+    background: #222;
+    color: white;
+    box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.3);
+}
+
+button {
+    padding: 12px 25px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #ff9500, #ff5700); /* Orange button */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.4);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff5700, #ff2200);
+    transform: scale(1.05);
+}
+
+/* 🔹 TABLE CONTAINER */
+.table-container {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.3);
+}
+
+/* 🔹 SEARCH RESULTS TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1e1e1e;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.3);
+}
+
+/* 🔹 TABLE HEADERS */
+th {
+    background: linear-gradient(135deg, #ff9500, #ff5700);
+    color: white;
+    font-size: 1.4rem;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 🔹 TABLE ROWS */
+td {
+    padding: 12px;
+    border-bottom: 2px solid rgba(255, 165, 0, 0.3);
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+/* 🔹 ALTERNATING ROW COLORS */
+tr:nth-child(even) {
+    background: rgba(255, 165, 0, 0.1);
+}
+
+/* 🔹 HOVER EFFECT */
+tr:hover {
+    background: rgba(255, 165, 0, 0.3);
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+}
+
+/* 🔹 ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, .table-container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 🔹 SEARCH RESULTS PAGE STYLES */
+.results-container {
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0px 4px 20px rgba(255, 165, 0, 0.4);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 🔹 SEARCH AGAIN BUTTON */
+.search-again-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #ff9500, #ff5700); /* Orange gradient */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.4);
+}
+
+.search-again-btn:hover {
+    background: linear-gradient(135deg, #ff5700, #ff2200);
+    transform: scale(1.05);
+}
+
+/* 🔹 RESULTS TITLE */
+.results-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(255, 165, 0, 0.6);
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+}
+

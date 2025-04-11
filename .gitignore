@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+
+venv/
+env/
+
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+*.sqlite3
+database.db
+
+pip-log.txt
+pip-delete-this-directory.txt
+
+logs/
+*.log
+
+.vscode/
+.idea/
+
